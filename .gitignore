@@ -1,0 +1,9 @@
+data/
+
+data_ours/
+logs/
+checkpoints/
+tet_visual/
+*.png
+
+*.pyc

@@ -474,7 +474,7 @@ class NeRFRenderer(torch.nn.Module):
         imesh = mesh.auto_normals(imesh)
         imesh = mesh.compute_tangents(imesh)
 
-        h = 272
+        h = 272 if (h != 800) else h
         buffers = render.render_mesh(
             self.glctx,
             imesh,
