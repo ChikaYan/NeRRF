@@ -232,3 +232,6 @@ class Trainer:
                     progress.update(1)
             if self.lr_scheduler is not None:
                 self.lr_scheduler.step()
+
+        if self.args.stage == 1:
+            self.extra_save_state(global_step=step_id)
